@@ -3,20 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Name | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #a0a0a0;
+            font-size: 1.2rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 20px;
+            border-bottom: 1px solid #2a2a4a;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #6366f1;
+        }
+
+        /* About */
+        .about-text {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Projects */
+        .project {
+            background: #1e1e3f;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            color: #22d3ee;
+            margin-bottom: 10px;
+        }
+
+        .project a {
+            color: #6366f1;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .skill {
+            background: #2a2a4a;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Contact */
+        .contact-links {
+            text-align: center;
+        }
+
+        .contact-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            section { padding: 30px 15px; }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Site</h1>
+        <div class="container">
+            <h1>Your Name</h1>
+            <p>Developer | Designer | Creator</p>
+        </div>
     </header>
 
-    <main>
-        <p>Hello World! This is my first page hosted on GitHub Pages.</p>
-    </main>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="about-text">
+                I'm a passionate developer who loves building things for the web. 
+                I specialize in creating clean, functional websites and applications.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <h3>Project One</h3>
+                <p>A brief description of your first project goes here.</p>
+                <br>
+                <a href="#">Live Demo</a>
+                <a href="#">GitHub</a>
+            </div>
+
+            <div class="project">
+                <h3>Project Two</h3>
+                <p>Description of your second project.</p>
+                <br>
+                <a href="#">Live Demo</a>
+                <a href="#">GitHub</a>
+            </div>
+
+            <div class="project">
+                <h3>Project Three</h3>
+                <p>Description of your third project.</p>
+                <br>
+                <a href="#">Live Demo</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill">HTML5</span>
+                <span class="skill">CSS3</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">React</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">Python</span>
+                <span class="skill">Git</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:your@email.com">Email</a>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 My Name</p>
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
     </footer>
 </body>
 </html>
